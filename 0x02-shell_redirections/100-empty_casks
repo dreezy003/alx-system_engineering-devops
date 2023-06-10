@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -empty -execdir echo {} \; -o -type f -empty -execdir echo {} \;
+find . -empty -printf "%P\n" -not -path "./.*"
